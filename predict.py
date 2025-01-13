@@ -5,7 +5,7 @@ import sys
 
 def predict(input_file, separator = ';'):
     # Carregar o modelo treinado
-    model = joblib.load('random_forest_model.pkl')
+    model = joblib.load('models/random_forest_model.pkl')
 
     # Carregar os dados de entrada
     df = pd.read_csv(input_file, sep=separator)
